@@ -333,7 +333,7 @@ class pre(object):
 				with open(self.path + 'true_graph/test/' + str(i) + '_34.json', 'w') as f:
 					json.dump(tensor, f)
 
-def pre_main(path='/public/home/hwj/zh/multi_QM9/'):
+def pre_main(path='/public/home/pcoss1/zh/multi_QM9/'):
 	main = pre(path)
 	main.load_data()
 	main.longest_distance()
@@ -591,7 +591,7 @@ class trainer(object):
 
 if __name__ == '__main__':
 	# pre_main()
-	main = trainer(path='/public/home/hwj/zh/multi_QM9/', lr=0.001, batch_size=128, epochs=1000, out=1, _type='reg', class_weight=None)
+	main = trainer(path='/public/home/pcoss1/zh/multi_QM9/', lr=0.001, batch_size=128, epochs=1000, out=1, _type='reg', class_weight=None)
 	main.main_trainer()
 
 

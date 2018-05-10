@@ -284,7 +284,7 @@ class pre(object):
 				json.dump(self.test_pre34, f)
 
 
-def pre_main(path='/public/home/hwj/zh/local-connect/MIC/'):
+def pre_main(path='/public/home/pcoss1/zh/local-connect/MIC/'):
 	main = pre(path)
 	main.load_data()
 	main.longest_distance()
@@ -543,6 +543,6 @@ class trainer(object):
 		self.train()
 
 if __name__ == '__main__':
-	pre_main(path='/public/home/hwj/zh/local-connect/MIC/')
-	#main = trainer(path='/public/home/hwj/zh/multi_QM9/', lr=0.001, batch_size=128, epochs=1000, out=1, _type='classify', class_weight=None)
+	pre_main(path='/public/home/pcoss1/zh/local-connect/MIC/')
+	#main = trainer(path='/public/home/pcoss1/zh/multi_QM9/', lr=0.001, batch_size=128, epochs=1000, out=1, _type='classify', class_weight=None)
 	#main.main_trainer()
